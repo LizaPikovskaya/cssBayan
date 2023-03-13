@@ -1,0 +1,212 @@
+body {
+    font-family: "Railway", sans-serif;
+    color: black;
+    background-color:#FFEBCD;
+    letter-spacing: 0.02em;
+   
+  }
+  
+
+  
+  .link {
+    text-decoration: none;
+  }
+  p {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  ul,
+  ol {
+    list-style: none;
+  
+    margin: 0;
+  
+    padding-left: 0;
+  }
+  h1,
+  h2,
+  h3,
+  h4 {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+  button {
+    cursor: pointer;
+    border: 1px solid transparent;
+  }
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+  
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+  
+  
+  .container {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  @media screen and (min-width: 820px){
+    .container {
+        width: 820px;
+    }  }
+    @media screen and (min-width: 1080px){
+        .container {
+            width: 1080px;
+        }  }
+        @media screen and (min-width: 1400px){
+          .container {
+              width: 1400px;
+          }  }
+  
+  
+          .main-title {
+            font-size: 2rem;
+            text-align: center;
+            margin-top: 3.2rem;
+            margin-bottom: 3.2rem;
+          }
+          @media screen and (min-width: 1080px){
+            .main-title  {
+                font-size: 2.5rem;
+            }  }
+            @media screen and (min-width: 1500px){
+                .main-title  {
+                    font-size: 3.5rem;
+                }  }
+  .accordion {
+    margin: 0 auto; 
+  transition: all 250ms linear;}
+  
+    .accordion:hover .accordion-title {
+        color: rgb(44, 14, 165);
+    }
+    .accordion:hover .cross-icon {
+        opacity: 1;
+        visibility: visible;
+        fill: rgb(44, 14, 165);
+    }
+  .accordion-item {
+    max-width: 100%;
+  position: relative;
+  border-top: 1px solid grey;
+    margin: 0 auto;
+  }
+  .accordion-title {
+    font-size: 1rem;
+    position: relative;
+    display: block;
+    padding: 25px 15px;
+  color: black;
+  font-weight: 700;
+    cursor: pointer;
+    transition: color 300ms linear;
+  }
+  @media screen and (min-width: 820px){
+    .accordion-title {
+  font-size: 1.2rem;    }  }
+  @media screen and (min-width: 1080px){
+    .accordion-title {
+        font-size: 1.3rem;
+    }  }
+    @media screen and (min-width: 1500px){
+        .accordion-title {
+            font-size: 1.5rem;
+        }  }
+
+
+  .accordion-title:hover {
+   color: rgb(29, 92, 195) ;
+  }
+  .accordion-title:hover {
+   color: rgb(29, 92, 195) ;
+  }
+  
+
+  .accordion-input {
+    -webkit-appearance: none;
+    appearance: none;
+   position: absolute;
+  }
+  
+  
+  
+  .cross-icon {
+  opacity:0;
+  visibility: hidden;
+  position: absolute;
+  top: 30px;
+  transform: translateY(-50%) rotate(45deg);
+  right: 15px;
+  transition: all 250ms linear;
+  }
+
+  
+   .img{
+    margin: auto;
+    height: 0;
+    transition: height 500ms linear;
+  } 
+
+
+  @media screen and (min-width: 320px){
+    .accordion-input:checked ~ .img,
+    .accordion-item ~ .img,
+    .accordion-title:hover .img,
+    .accordion-input:checked ~ label .img    {
+      margin-top: 1.9rem;
+      margin-bottom: 1.25rem;
+      height: 70vw;
+    }
+  
+  }
+  @media screen and (min-width: 568px){
+    .accordion-input:checked ~ .img,
+  .accordion-item ~ .img,
+  .accordion-title:hover .img,
+  .accordion-input:checked ~ label .img    {
+    margin-top: 1.9rem;
+    margin-bottom: 1.25rem;
+    height: 50vw;
+  }
+  }
+  
+  @media screen and (min-width: 1080px){
+    .accordion-input:checked ~ .img,
+  .accordion-item ~ .img,
+  .accordion-title:hover .img,
+  .accordion-input:checked ~ label .img    {
+    margin-top: 1.9rem;
+      margin-bottom: 1.25rem;
+    height: 40vw;
+  }
+  }
+  
+
+  .accordion-input:checked ~ label .cross-icon {
+    opacity: 1;
+    visibility: visible;
+  transform: translateY(-50%);
+  }
+  .accordion-input:checked + .accordion-title {
+  color: black;    }
+
+  .accordion-item:hover  .cross-icon {
+    transform: translateY(-50%);
+  
+  }
